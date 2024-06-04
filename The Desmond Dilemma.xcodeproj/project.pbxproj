@@ -11,7 +11,33 @@
 		0E7DFA8F2C0E7898001BFABA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7DFA8E2C0E7898001BFABA /* ContentView.swift */; };
 		0E7DFA912C0E789C001BFABA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E7DFA902C0E789C001BFABA /* Assets.xcassets */; };
 		0E7DFA942C0E789C001BFABA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E7DFA932C0E789C001BFABA /* Preview Assets.xcassets */; };
+		0E7DFAA62C0F6677001BFABA /* Engine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E7DFAA02C0F6677001BFABA /* Engine.framework */; };
+		0E7DFAA72C0F6677001BFABA /* Engine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0E7DFAA02C0F6677001BFABA /* Engine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0E7DFAA42C0F6677001BFABA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E7DFA812C0E7898001BFABA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E7DFA9F2C0F6677001BFABA;
+			remoteInfo = Engine;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0E7DFAAB2C0F6677001BFABA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0E7DFAA72C0F6677001BFABA /* Engine.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0E7DFA892C0E7898001BFABA /* The Desmond Dilemma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Desmond Dilemma.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,10 +46,19 @@
 		0E7DFA902C0E789C001BFABA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E7DFA932C0E789C001BFABA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0E7DFA952C0E789C001BFABA /* The_Desmond_Dilemma.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = The_Desmond_Dilemma.entitlements; sourceTree = "<group>"; };
+		0E7DFAA02C0F6677001BFABA /* Engine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Engine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0E7DFA862C0E7898001BFABA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E7DFAA62C0F6677001BFABA /* Engine.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E7DFA9D2C0F6677001BFABA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				0E7DFA8B2C0E7898001BFABA /* The Desmond Dilemma */,
+				0E7DFAA12C0F6677001BFABA /* Engine */,
 				0E7DFA8A2C0E7898001BFABA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				0E7DFA892C0E7898001BFABA /* The Desmond Dilemma.app */,
+				0E7DFAA02C0F6677001BFABA /* Engine.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,7 +106,24 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		0E7DFAA12C0F6677001BFABA /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0E7DFA9B2C0F6677001BFABA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		0E7DFA882C0E7898001BFABA /* The Desmond Dilemma */ = {
@@ -79,15 +133,35 @@
 				0E7DFA852C0E7898001BFABA /* Sources */,
 				0E7DFA862C0E7898001BFABA /* Frameworks */,
 				0E7DFA872C0E7898001BFABA /* Resources */,
+				0E7DFAAB2C0F6677001BFABA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0E7DFAA52C0F6677001BFABA /* PBXTargetDependency */,
 			);
 			name = "The Desmond Dilemma";
 			productName = "The Desmond Dilemma";
 			productReference = 0E7DFA892C0E7898001BFABA /* The Desmond Dilemma.app */;
 			productType = "com.apple.product-type.application";
+		};
+		0E7DFA9F2C0F6677001BFABA /* Engine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E7DFAA82C0F6677001BFABA /* Build configuration list for PBXNativeTarget "Engine" */;
+			buildPhases = (
+				0E7DFA9B2C0F6677001BFABA /* Headers */,
+				0E7DFA9C2C0F6677001BFABA /* Sources */,
+				0E7DFA9D2C0F6677001BFABA /* Frameworks */,
+				0E7DFA9E2C0F6677001BFABA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Engine;
+			productName = Engine;
+			productReference = 0E7DFAA02C0F6677001BFABA /* Engine.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,6 +174,9 @@
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					0E7DFA882C0E7898001BFABA = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					0E7DFA9F2C0F6677001BFABA = {
 						CreatedOnToolsVersion = 15.2;
 					};
 				};
@@ -118,6 +195,7 @@
 			projectRoot = "";
 			targets = (
 				0E7DFA882C0E7898001BFABA /* The Desmond Dilemma */,
+				0E7DFA9F2C0F6677001BFABA /* Engine */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +207,13 @@
 			files = (
 				0E7DFA942C0E789C001BFABA /* Preview Assets.xcassets in Resources */,
 				0E7DFA912C0E789C001BFABA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E7DFA9E2C0F6677001BFABA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +229,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0E7DFA9C2C0F6677001BFABA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0E7DFAA52C0F6677001BFABA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0E7DFA9F2C0F6677001BFABA /* Engine */;
+			targetProxy = 0E7DFAA42C0F6677001BFABA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0E7DFA962C0E789C001BFABA /* Debug */ = {
@@ -325,6 +425,72 @@
 			};
 			name = Release;
 		};
+		0E7DFAA92C0F6677001BFABA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6G8ZYP2B49;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.awilson-dev.Engine";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0E7DFAAA2C0F6677001BFABA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6G8ZYP2B49;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.awilson-dev.Engine";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -342,6 +508,15 @@
 			buildConfigurations = (
 				0E7DFA992C0E789C001BFABA /* Debug */,
 				0E7DFA9A2C0E789C001BFABA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E7DFAA82C0F6677001BFABA /* Build configuration list for PBXNativeTarget "Engine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E7DFAA92C0F6677001BFABA /* Debug */,
+				0E7DFAAA2C0F6677001BFABA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
