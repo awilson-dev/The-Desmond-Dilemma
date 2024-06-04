@@ -14,36 +14,36 @@ struct KeyEventHandling: NSViewRepresentable {
         
         override func keyDown(with event: NSEvent) {
             if !event.isARepeat {
-                if event.keyCode == 0 {
-                    //a
+                if event.keyCode == 13 {
+                    // W
+                    ViewModel.shared.velocityVector += Vector(x: 0, y: 1)
+                } else if event.keyCode == 1 {
+                    // S
+                    ViewModel.shared.velocityVector += Vector(x: 0, y: -1)
+                } else if event.keyCode == 0 {
+                    // A
                     ViewModel.shared.velocityVector += Vector(x: -1, y: 0)
                 } else if event.keyCode == 2 {
-                    //d
+                    // D
                     ViewModel.shared.velocityVector += Vector(x: 1, y: 0)
-                } else if event.keyCode == 1 {
-                    //s
-                    ViewModel.shared.velocityVector += Vector(x: 0, y: -1)
-                } else if event.keyCode == 13 {
-                    //w
-                    ViewModel.shared.velocityVector += Vector(x: 0, y: 1)
                 }
             }
         }
         
         override func keyUp(with event: NSEvent) {
             if !event.isARepeat {
-                if event.keyCode == 0 {
-                    //a
+                if event.keyCode == 13 {
+                    // W
+                    ViewModel.shared.velocityVector -= Vector(x: 0, y: 1)
+                } else if event.keyCode == 1 {
+                    // S
+                    ViewModel.shared.velocityVector -= Vector(x: 0, y: -1)
+                } else if event.keyCode == 0 {
+                    // A
                     ViewModel.shared.velocityVector -= Vector(x: -1, y: 0)
                 } else if event.keyCode == 2 {
-                    //d
+                    // D
                     ViewModel.shared.velocityVector -= Vector(x: 1, y: 0)
-                } else if event.keyCode == 1 {
-                    //s
-                    ViewModel.shared.velocityVector -= Vector(x: 0, y: -1)
-                } else if event.keyCode == 13 {
-                    //w
-                    ViewModel.shared.velocityVector -= Vector(x: 0, y: 1)
                 }
             }
         }

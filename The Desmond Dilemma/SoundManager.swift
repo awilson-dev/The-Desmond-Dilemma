@@ -28,15 +28,18 @@ public extension SoundManager {
             }
             oldSound.stop()
         }
+        
         return try AVAudioPlayer(contentsOf: url)
     }
 
     func play(_ url: URL, channel: Int?, volume: Double, pan: Double) throws {
         let player = try preload(url, channel: channel)
+        
         if let channel = channel {
             channels[channel] = (url, player)
             player.numberOfLoops = -1
         }
+        
         playing.insert(player)
         player.delegate = self
         player.volume = Float(volume)

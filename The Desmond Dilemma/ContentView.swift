@@ -9,11 +9,14 @@ import SwiftUI
 import Engine
 
 struct ContentView: View {
-    @ObservedObject var model = ViewModel.shared
+    @ObservedObject var viewModel = ViewModel.shared
+    
     @State private var image = NSImage()
+    
     private let levels = loadLevels()
-    @State private var world: World
     private let textures = loadTextures()
+    
+    @State private var world: World
     
     private let maximumTimeStep: Double = 1 / 20
     private let worldTimeStep: Double = 1 / 120
@@ -54,7 +57,7 @@ struct ContentView: View {
                     return event
                 }
                 NSEvent.addLocalMonitorForEvents(matching: .leftMouseDown) { event in
-                    model.lastFiredTime = CACurrentMediaTime()
+                    viewModel.lastFiredTime = CACurrentMediaTime()
                     return nil
                 }
             }
@@ -69,24 +72,28 @@ struct ContentView: View {
             if mouseLocation.x - previousMouseLocation.x != 0 {
                 inputLagTimerStart = CACurrentMediaTime()
             }
+            
             if CACurrentMediaTime() - inputLagTimerStart > 0.1 {
                 deltaX = 0
                 inputLagTimerStart = CACurrentMediaTime()
             }
         }
         
-        model.rotation = deltaX * 0.08
+        viewModel.rotation = deltaX * 0.08
         let point = NSPoint(x: NSScreen.main!.frame.width * 0.5, y: NSScreen.main!.frame.height * 0.5)
         CGWarpMouseCursorPosition(point)
         previousMouseLocation = mouseLocation
         
-        let rotation = model.rotation * world.player.turningSpeed * worldTimeStep
+        let rotation = viewModel.rotation * world.player.turningSpeed * worldTimeStep
+        
         let input = Input(
-            velocityVector: model.velocityVector,
+            velocityVector: viewModel.velocityVector,
             rotation: Rotation(sine: sin(rotation), cosine: cos(rotation)),
-            isFiring: model.lastFiredTime > lastFrameTime
+            isFiring: viewModel.lastFiredTime > lastFrameTime
         )
+        
         let worldSteps = (timeStep / worldTimeStep).rounded(.up)
+        
         for _ in 0 ..< Int(worldSteps) {
             if let action = world.update(timeStep: timeStep / worldSteps, input: input) {
                 switch action {
@@ -114,6 +121,7 @@ struct ContentView: View {
                 }
             }
         }
+        
         lastFrameTime = CACurrentMediaTime()
 
         renderer.draw(world)
