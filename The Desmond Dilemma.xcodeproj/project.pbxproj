@@ -13,6 +13,14 @@
 		0E7DFA942C0E789C001BFABA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E7DFA932C0E789C001BFABA /* Preview Assets.xcassets */; };
 		0E7DFAA62C0F6677001BFABA /* Engine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E7DFAA02C0F6677001BFABA /* Engine.framework */; };
 		0E7DFAA72C0F6677001BFABA /* Engine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0E7DFAA02C0F6677001BFABA /* Engine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0E7DFAAD2C0F6DB4001BFABA /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7DFAAC2C0F6DB4001BFABA /* Color.swift */; };
+		0E7DFAAF2C0F6DEC001BFABA /* Bitmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7DFAAE2C0F6DEC001BFABA /* Bitmap.swift */; };
+		0E7DFAB12C0F6E50001BFABA /* NSImage+Bitmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7DFAB02C0F6E50001BFABA /* NSImage+Bitmap.swift */; };
+		0E7DFAB32C0F703A001BFABA /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7DFAB22C0F703A001BFABA /* Renderer.swift */; };
+		0E7DFAB52C0F73D9001BFABA /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7DFAB42C0F73D9001BFABA /* Vector.swift */; };
+		0E7DFAB72C0F73FC001BFABA /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7DFAB62C0F73FC001BFABA /* Player.swift */; };
+		0E7DFAB92C0F75D2001BFABA /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7DFAB82C0F75D2001BFABA /* World.swift */; };
+		0E7DFABB2C0F7FA1001BFABA /* Rect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7DFABA2C0F7FA1001BFABA /* Rect.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +55,14 @@
 		0E7DFA932C0E789C001BFABA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0E7DFA952C0E789C001BFABA /* The_Desmond_Dilemma.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = The_Desmond_Dilemma.entitlements; sourceTree = "<group>"; };
 		0E7DFAA02C0F6677001BFABA /* Engine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Engine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E7DFAAC2C0F6DB4001BFABA /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		0E7DFAAE2C0F6DEC001BFABA /* Bitmap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bitmap.swift; sourceTree = "<group>"; };
+		0E7DFAB02C0F6E50001BFABA /* NSImage+Bitmap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSImage+Bitmap.swift"; sourceTree = "<group>"; };
+		0E7DFAB22C0F703A001BFABA /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		0E7DFAB42C0F73D9001BFABA /* Vector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vector.swift; sourceTree = "<group>"; };
+		0E7DFAB62C0F73FC001BFABA /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		0E7DFAB82C0F75D2001BFABA /* World.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = World.swift; sourceTree = "<group>"; };
+		0E7DFABA2C0F7FA1001BFABA /* Rect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +107,7 @@
 			children = (
 				0E7DFA8C2C0E7898001BFABA /* The_Desmond_DilemmaApp.swift */,
 				0E7DFA8E2C0E7898001BFABA /* ContentView.swift */,
+				0E7DFAB02C0F6E50001BFABA /* NSImage+Bitmap.swift */,
 				0E7DFA902C0E789C001BFABA /* Assets.xcassets */,
 				0E7DFA952C0E789C001BFABA /* The_Desmond_Dilemma.entitlements */,
 				0E7DFA922C0E789C001BFABA /* Preview Content */,
@@ -109,6 +126,13 @@
 		0E7DFAA12C0F6677001BFABA /* Engine */ = {
 			isa = PBXGroup;
 			children = (
+				0E7DFAAC2C0F6DB4001BFABA /* Color.swift */,
+				0E7DFAAE2C0F6DEC001BFABA /* Bitmap.swift */,
+				0E7DFAB22C0F703A001BFABA /* Renderer.swift */,
+				0E7DFAB42C0F73D9001BFABA /* Vector.swift */,
+				0E7DFAB62C0F73FC001BFABA /* Player.swift */,
+				0E7DFAB82C0F75D2001BFABA /* World.swift */,
+				0E7DFABA2C0F7FA1001BFABA /* Rect.swift */,
 			);
 			path = Engine;
 			sourceTree = "<group>";
@@ -178,6 +202,7 @@
 					};
 					0E7DFA9F2C0F6677001BFABA = {
 						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
 					};
 				};
 			};
@@ -225,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E7DFA8F2C0E7898001BFABA /* ContentView.swift in Sources */,
+				0E7DFAB12C0F6E50001BFABA /* NSImage+Bitmap.swift in Sources */,
 				0E7DFA8D2C0E7898001BFABA /* The_Desmond_DilemmaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -233,6 +259,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E7DFABB2C0F7FA1001BFABA /* Rect.swift in Sources */,
+				0E7DFAB92C0F75D2001BFABA /* World.swift in Sources */,
+				0E7DFAAF2C0F6DEC001BFABA /* Bitmap.swift in Sources */,
+				0E7DFAB32C0F703A001BFABA /* Renderer.swift in Sources */,
+				0E7DFAB52C0F73D9001BFABA /* Vector.swift in Sources */,
+				0E7DFAB72C0F73FC001BFABA /* Player.swift in Sources */,
+				0E7DFAAD2C0F6DB4001BFABA /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +401,7 @@
 		0E7DFA992C0E789C001BFABA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "The Desmond Dilemma/The_Desmond_Dilemma.entitlements";
@@ -398,6 +432,7 @@
 		0E7DFA9A2C0E789C001BFABA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "The Desmond Dilemma/The_Desmond_Dilemma.entitlements";
@@ -428,6 +463,7 @@
 		0E7DFAA92C0F6677001BFABA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -445,6 +481,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
@@ -452,6 +489,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -461,6 +499,7 @@
 		0E7DFAAA2C0F6677001BFABA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -478,6 +517,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
