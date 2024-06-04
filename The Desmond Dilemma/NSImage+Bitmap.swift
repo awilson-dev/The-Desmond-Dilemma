@@ -36,6 +36,34 @@ extension NSImage {
             return nil
         }
 
-        self.init(cgImage: cgImage, size: NSSize(width: CGFloat(bitmap.width), height: CGFloat(bitmap.height)))
+        self.init(cgImage: cgImage, size: NSSize(width: bitmap.width, height: bitmap.height))
+    }
+}
+
+extension Bitmap {
+    init?(image: NSImage) {
+        guard let cgImage = image.cgImage(forProposedRect: nil, context: nil, hints: nil) else {
+            return nil
+        }
+
+        let alphaInfo = CGImageAlphaInfo.premultipliedLast
+        let bytesPerPixel = MemoryLayout<Engine.Color>.size
+        let bytesPerRow = cgImage.width * bytesPerPixel
+
+        var pixels = [Engine.Color](repeating: .clear, count: cgImage.width * cgImage.height)
+        guard let context = CGContext(
+            data: &pixels,
+            width: cgImage.width,
+            height: cgImage.height,
+            bitsPerComponent: 8,
+            bytesPerRow: bytesPerRow,
+            space: CGColorSpaceCreateDeviceRGB(),
+            bitmapInfo: alphaInfo.rawValue
+        ) else {
+            return nil
+        }
+
+        context.draw(cgImage, in: CGRect(origin: .zero, size: image.size))
+        self.init(width: cgImage.width, pixels: pixels)
     }
 }

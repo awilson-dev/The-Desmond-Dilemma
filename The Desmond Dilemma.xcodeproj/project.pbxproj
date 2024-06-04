@@ -21,6 +21,45 @@
 		0E7DFAB72C0F73FC001BFABA /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7DFAB62C0F73FC001BFABA /* Player.swift */; };
 		0E7DFAB92C0F75D2001BFABA /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7DFAB82C0F75D2001BFABA /* World.swift */; };
 		0E7DFABB2C0F7FA1001BFABA /* Rect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7DFABA2C0F7FA1001BFABA /* Rect.swift */; };
+		0E7DFABD2C0F8958001BFABA /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7DFABC2C0F8958001BFABA /* Tile.swift */; };
+		0E7DFABF2C0F8969001BFABA /* Tilemap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7DFABE2C0F8969001BFABA /* Tilemap.swift */; };
+		0E7DFAC12C0F8C80001BFABA /* Levels.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E7DFAC02C0F8C80001BFABA /* Levels.json */; };
+		0E7DFAC32C0F906B001BFABA /* Thing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7DFAC22C0F906B001BFABA /* Thing.swift */; };
+		0E7DFAC52C0F9355001BFABA /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7DFAC42C0F9355001BFABA /* SoundManager.swift */; };
+		0E7DFAC72C0F93DD001BFABA /* KeyEventHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7DFAC62C0F93DD001BFABA /* KeyEventHandling.swift */; };
+		0E7DFAC92C0F940C001BFABA /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7DFAC82C0F940C001BFABA /* ViewModel.swift */; };
+		0E7DFACB2C0F94AD001BFABA /* Actor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7DFACA2C0F94AD001BFABA /* Actor.swift */; };
+		0E7DFACD2C0F94CC001BFABA /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7DFACC2C0F94CC001BFABA /* Animation.swift */; };
+		0E7DFACF2C0F94E6001BFABA /* Billboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7DFACE2C0F94E6001BFABA /* Billboard.swift */; };
+		0E7DFAD12C0F9562001BFABA /* Door.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7DFAD02C0F9562001BFABA /* Door.swift */; };
+		0E7DFAD32C0F9588001BFABA /* Easing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7DFAD22C0F9588001BFABA /* Easing.swift */; };
+		0E7DFAD52C0F95A9001BFABA /* Effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7DFAD42C0F95A9001BFABA /* Effect.swift */; };
+		0E7DFAD72C0F95CD001BFABA /* Fan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7DFAD62C0F95CD001BFABA /* Fan.swift */; };
+		0E7DFAD92C0F95F5001BFABA /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7DFAD82C0F95F5001BFABA /* Input.swift */; };
+		0E7DFADB2C0F9625001BFABA /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7DFADA2C0F9625001BFABA /* Monster.swift */; };
+		0E7DFADD2C0F9661001BFABA /* Pushwall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7DFADC2C0F9661001BFABA /* Pushwall.swift */; };
+		0E7DFADF2C0F967E001BFABA /* Ray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7DFADE2C0F967E001BFABA /* Ray.swift */; };
+		0E7DFAE12C0F96CD001BFABA /* Rotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7DFAE02C0F96CD001BFABA /* Rotation.swift */; };
+		0E7DFAE32C0F96F0001BFABA /* Sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7DFAE22C0F96F0001BFABA /* Sounds.swift */; };
+		0E7DFAE52C0F9710001BFABA /* Switch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7DFAE42C0F9710001BFABA /* Switch.swift */; };
+		0E7DFAE72C0F98FD001BFABA /* Textures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7DFAE62C0F98FD001BFABA /* Textures.swift */; };
+		0E7DFAFA2C0F9A10001BFABA /* playerWalk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E7DFAE92C0F9A0F001BFABA /* playerWalk.mp3 */; };
+		0E7DFAFB2C0F9A10001BFABA /* playerDeath.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E7DFAEA2C0F9A0F001BFABA /* playerDeath.mp3 */; };
+		0E7DFAFC2C0F9A10001BFABA /* shotgunFire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E7DFAEB2C0F9A0F001BFABA /* shotgunFire.mp3 */; };
+		0E7DFAFD2C0F9A10001BFABA /* monsterHit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E7DFAEC2C0F9A0F001BFABA /* monsterHit.mp3 */; };
+		0E7DFAFE2C0F9A10001BFABA /* ricochet.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E7DFAED2C0F9A0F001BFABA /* ricochet.mp3 */; };
+		0E7DFAFF2C0F9A10001BFABA /* medkit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E7DFAEE2C0F9A0F001BFABA /* medkit.mp3 */; };
+		0E7DFB002C0F9A10001BFABA /* monsterGroan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E7DFAEF2C0F9A0F001BFABA /* monsterGroan.mp3 */; };
+		0E7DFB012C0F9A10001BFABA /* switchFlip.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E7DFAF02C0F9A0F001BFABA /* switchFlip.mp3 */; };
+		0E7DFB022C0F9A10001BFABA /* pistolFire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E7DFAF12C0F9A10001BFABA /* pistolFire.mp3 */; };
+		0E7DFB032C0F9A10001BFABA /* squelch.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E7DFAF22C0F9A10001BFABA /* squelch.mp3 */; };
+		0E7DFB042C0F9A10001BFABA /* fan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E7DFAF32C0F9A10001BFABA /* fan.mp3 */; };
+		0E7DFB052C0F9A10001BFABA /* doorSlide.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E7DFAF42C0F9A10001BFABA /* doorSlide.mp3 */; };
+		0E7DFB062C0F9A10001BFABA /* wallThud.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E7DFAF52C0F9A10001BFABA /* wallThud.mp3 */; };
+		0E7DFB072C0F9A10001BFABA /* monsterSwipe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E7DFAF62C0F9A10001BFABA /* monsterSwipe.mp3 */; };
+		0E7DFB082C0F9A10001BFABA /* monsterDeath.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E7DFAF72C0F9A10001BFABA /* monsterDeath.mp3 */; };
+		0E7DFB092C0F9A10001BFABA /* shotgunPickup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E7DFAF82C0F9A10001BFABA /* shotgunPickup.mp3 */; };
+		0E7DFB0A2C0F9A10001BFABA /* wallSlide.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E7DFAF92C0F9A10001BFABA /* wallSlide.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +102,45 @@
 		0E7DFAB62C0F73FC001BFABA /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		0E7DFAB82C0F75D2001BFABA /* World.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = World.swift; sourceTree = "<group>"; };
 		0E7DFABA2C0F7FA1001BFABA /* Rect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rect.swift; sourceTree = "<group>"; };
+		0E7DFABC2C0F8958001BFABA /* Tile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
+		0E7DFABE2C0F8969001BFABA /* Tilemap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tilemap.swift; sourceTree = "<group>"; };
+		0E7DFAC02C0F8C80001BFABA /* Levels.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Levels.json; sourceTree = "<group>"; };
+		0E7DFAC22C0F906B001BFABA /* Thing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thing.swift; sourceTree = "<group>"; };
+		0E7DFAC42C0F9355001BFABA /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		0E7DFAC62C0F93DD001BFABA /* KeyEventHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyEventHandling.swift; sourceTree = "<group>"; };
+		0E7DFAC82C0F940C001BFABA /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		0E7DFACA2C0F94AD001BFABA /* Actor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actor.swift; sourceTree = "<group>"; };
+		0E7DFACC2C0F94CC001BFABA /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		0E7DFACE2C0F94E6001BFABA /* Billboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Billboard.swift; sourceTree = "<group>"; };
+		0E7DFAD02C0F9562001BFABA /* Door.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Door.swift; sourceTree = "<group>"; };
+		0E7DFAD22C0F9588001BFABA /* Easing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Easing.swift; sourceTree = "<group>"; };
+		0E7DFAD42C0F95A9001BFABA /* Effect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Effect.swift; sourceTree = "<group>"; };
+		0E7DFAD62C0F95CD001BFABA /* Fan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fan.swift; sourceTree = "<group>"; };
+		0E7DFAD82C0F95F5001BFABA /* Input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Input.swift; sourceTree = "<group>"; };
+		0E7DFADA2C0F9625001BFABA /* Monster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
+		0E7DFADC2C0F9661001BFABA /* Pushwall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pushwall.swift; sourceTree = "<group>"; };
+		0E7DFADE2C0F967E001BFABA /* Ray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ray.swift; sourceTree = "<group>"; };
+		0E7DFAE02C0F96CD001BFABA /* Rotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rotation.swift; sourceTree = "<group>"; };
+		0E7DFAE22C0F96F0001BFABA /* Sounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sounds.swift; sourceTree = "<group>"; };
+		0E7DFAE42C0F9710001BFABA /* Switch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Switch.swift; sourceTree = "<group>"; };
+		0E7DFAE62C0F98FD001BFABA /* Textures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Textures.swift; sourceTree = "<group>"; };
+		0E7DFAE92C0F9A0F001BFABA /* playerWalk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = playerWalk.mp3; path = ../../../../../../Desktop/Programs/Swift/Projects/MacRetroRampage/MacRetroRampage/Sounds/playerWalk.mp3; sourceTree = "<group>"; };
+		0E7DFAEA2C0F9A0F001BFABA /* playerDeath.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = playerDeath.mp3; path = ../../../../../../Desktop/Programs/Swift/Projects/MacRetroRampage/MacRetroRampage/Sounds/playerDeath.mp3; sourceTree = "<group>"; };
+		0E7DFAEB2C0F9A0F001BFABA /* shotgunFire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = shotgunFire.mp3; path = ../../../../../../Desktop/Programs/Swift/Projects/MacRetroRampage/MacRetroRampage/Sounds/shotgunFire.mp3; sourceTree = "<group>"; };
+		0E7DFAEC2C0F9A0F001BFABA /* monsterHit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = monsterHit.mp3; path = ../../../../../../Desktop/Programs/Swift/Projects/MacRetroRampage/MacRetroRampage/Sounds/monsterHit.mp3; sourceTree = "<group>"; };
+		0E7DFAED2C0F9A0F001BFABA /* ricochet.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ricochet.mp3; path = ../../../../../../Desktop/Programs/Swift/Projects/MacRetroRampage/MacRetroRampage/Sounds/ricochet.mp3; sourceTree = "<group>"; };
+		0E7DFAEE2C0F9A0F001BFABA /* medkit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = medkit.mp3; path = ../../../../../../Desktop/Programs/Swift/Projects/MacRetroRampage/MacRetroRampage/Sounds/medkit.mp3; sourceTree = "<group>"; };
+		0E7DFAEF2C0F9A0F001BFABA /* monsterGroan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = monsterGroan.mp3; path = ../../../../../../Desktop/Programs/Swift/Projects/MacRetroRampage/MacRetroRampage/Sounds/monsterGroan.mp3; sourceTree = "<group>"; };
+		0E7DFAF02C0F9A0F001BFABA /* switchFlip.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = switchFlip.mp3; path = ../../../../../../Desktop/Programs/Swift/Projects/MacRetroRampage/MacRetroRampage/Sounds/switchFlip.mp3; sourceTree = "<group>"; };
+		0E7DFAF12C0F9A10001BFABA /* pistolFire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = pistolFire.mp3; path = ../../../../../../Desktop/Programs/Swift/Projects/MacRetroRampage/MacRetroRampage/Sounds/pistolFire.mp3; sourceTree = "<group>"; };
+		0E7DFAF22C0F9A10001BFABA /* squelch.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = squelch.mp3; path = ../../../../../../Desktop/Programs/Swift/Projects/MacRetroRampage/MacRetroRampage/Sounds/squelch.mp3; sourceTree = "<group>"; };
+		0E7DFAF32C0F9A10001BFABA /* fan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = fan.mp3; path = ../../../../../../Desktop/Programs/Swift/Projects/MacRetroRampage/MacRetroRampage/Sounds/fan.mp3; sourceTree = "<group>"; };
+		0E7DFAF42C0F9A10001BFABA /* doorSlide.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = doorSlide.mp3; path = ../../../../../../Desktop/Programs/Swift/Projects/MacRetroRampage/MacRetroRampage/Sounds/doorSlide.mp3; sourceTree = "<group>"; };
+		0E7DFAF52C0F9A10001BFABA /* wallThud.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = wallThud.mp3; path = ../../../../../../Desktop/Programs/Swift/Projects/MacRetroRampage/MacRetroRampage/Sounds/wallThud.mp3; sourceTree = "<group>"; };
+		0E7DFAF62C0F9A10001BFABA /* monsterSwipe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = monsterSwipe.mp3; path = ../../../../../../Desktop/Programs/Swift/Projects/MacRetroRampage/MacRetroRampage/Sounds/monsterSwipe.mp3; sourceTree = "<group>"; };
+		0E7DFAF72C0F9A10001BFABA /* monsterDeath.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = monsterDeath.mp3; path = ../../../../../../Desktop/Programs/Swift/Projects/MacRetroRampage/MacRetroRampage/Sounds/monsterDeath.mp3; sourceTree = "<group>"; };
+		0E7DFAF82C0F9A10001BFABA /* shotgunPickup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = shotgunPickup.mp3; path = ../../../../../../Desktop/Programs/Swift/Projects/MacRetroRampage/MacRetroRampage/Sounds/shotgunPickup.mp3; sourceTree = "<group>"; };
+		0E7DFAF92C0F9A10001BFABA /* wallSlide.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = wallSlide.mp3; path = ../../../../../../Desktop/Programs/Swift/Projects/MacRetroRampage/MacRetroRampage/Sounds/wallSlide.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +186,12 @@
 				0E7DFA8C2C0E7898001BFABA /* The_Desmond_DilemmaApp.swift */,
 				0E7DFA8E2C0E7898001BFABA /* ContentView.swift */,
 				0E7DFAB02C0F6E50001BFABA /* NSImage+Bitmap.swift */,
+				0E7DFAC42C0F9355001BFABA /* SoundManager.swift */,
+				0E7DFAC62C0F93DD001BFABA /* KeyEventHandling.swift */,
+				0E7DFAC82C0F940C001BFABA /* ViewModel.swift */,
+				0E7DFAC02C0F8C80001BFABA /* Levels.json */,
 				0E7DFA902C0E789C001BFABA /* Assets.xcassets */,
+				0E7DFAE82C0F99E3001BFABA /* Sounds */,
 				0E7DFA952C0E789C001BFABA /* The_Desmond_Dilemma.entitlements */,
 				0E7DFA922C0E789C001BFABA /* Preview Content */,
 			);
@@ -133,8 +216,50 @@
 				0E7DFAB62C0F73FC001BFABA /* Player.swift */,
 				0E7DFAB82C0F75D2001BFABA /* World.swift */,
 				0E7DFABA2C0F7FA1001BFABA /* Rect.swift */,
+				0E7DFABC2C0F8958001BFABA /* Tile.swift */,
+				0E7DFABE2C0F8969001BFABA /* Tilemap.swift */,
+				0E7DFAC22C0F906B001BFABA /* Thing.swift */,
+				0E7DFACA2C0F94AD001BFABA /* Actor.swift */,
+				0E7DFACC2C0F94CC001BFABA /* Animation.swift */,
+				0E7DFACE2C0F94E6001BFABA /* Billboard.swift */,
+				0E7DFAD02C0F9562001BFABA /* Door.swift */,
+				0E7DFAD22C0F9588001BFABA /* Easing.swift */,
+				0E7DFAD42C0F95A9001BFABA /* Effect.swift */,
+				0E7DFAD62C0F95CD001BFABA /* Fan.swift */,
+				0E7DFAD82C0F95F5001BFABA /* Input.swift */,
+				0E7DFADA2C0F9625001BFABA /* Monster.swift */,
+				0E7DFADC2C0F9661001BFABA /* Pushwall.swift */,
+				0E7DFADE2C0F967E001BFABA /* Ray.swift */,
+				0E7DFAE02C0F96CD001BFABA /* Rotation.swift */,
+				0E7DFAE22C0F96F0001BFABA /* Sounds.swift */,
+				0E7DFAE42C0F9710001BFABA /* Switch.swift */,
+				0E7DFAE62C0F98FD001BFABA /* Textures.swift */,
 			);
 			path = Engine;
+			sourceTree = "<group>";
+		};
+		0E7DFAE82C0F99E3001BFABA /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				0E7DFAF42C0F9A10001BFABA /* doorSlide.mp3 */,
+				0E7DFAF32C0F9A10001BFABA /* fan.mp3 */,
+				0E7DFAEE2C0F9A0F001BFABA /* medkit.mp3 */,
+				0E7DFAF72C0F9A10001BFABA /* monsterDeath.mp3 */,
+				0E7DFAEF2C0F9A0F001BFABA /* monsterGroan.mp3 */,
+				0E7DFAEC2C0F9A0F001BFABA /* monsterHit.mp3 */,
+				0E7DFAF62C0F9A10001BFABA /* monsterSwipe.mp3 */,
+				0E7DFAF12C0F9A10001BFABA /* pistolFire.mp3 */,
+				0E7DFAEA2C0F9A0F001BFABA /* playerDeath.mp3 */,
+				0E7DFAE92C0F9A0F001BFABA /* playerWalk.mp3 */,
+				0E7DFAED2C0F9A0F001BFABA /* ricochet.mp3 */,
+				0E7DFAEB2C0F9A0F001BFABA /* shotgunFire.mp3 */,
+				0E7DFAF82C0F9A10001BFABA /* shotgunPickup.mp3 */,
+				0E7DFAF22C0F9A10001BFABA /* squelch.mp3 */,
+				0E7DFAF02C0F9A0F001BFABA /* switchFlip.mp3 */,
+				0E7DFAF92C0F9A10001BFABA /* wallSlide.mp3 */,
+				0E7DFAF52C0F9A10001BFABA /* wallThud.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,8 +355,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E7DFAFA2C0F9A10001BFABA /* playerWalk.mp3 in Resources */,
+				0E7DFB022C0F9A10001BFABA /* pistolFire.mp3 in Resources */,
+				0E7DFB002C0F9A10001BFABA /* monsterGroan.mp3 in Resources */,
+				0E7DFAFC2C0F9A10001BFABA /* shotgunFire.mp3 in Resources */,
+				0E7DFB052C0F9A10001BFABA /* doorSlide.mp3 in Resources */,
+				0E7DFB032C0F9A10001BFABA /* squelch.mp3 in Resources */,
+				0E7DFAC12C0F8C80001BFABA /* Levels.json in Resources */,
+				0E7DFB072C0F9A10001BFABA /* monsterSwipe.mp3 in Resources */,
+				0E7DFAFE2C0F9A10001BFABA /* ricochet.mp3 in Resources */,
 				0E7DFA942C0E789C001BFABA /* Preview Assets.xcassets in Resources */,
+				0E7DFB082C0F9A10001BFABA /* monsterDeath.mp3 in Resources */,
+				0E7DFAFF2C0F9A10001BFABA /* medkit.mp3 in Resources */,
+				0E7DFB0A2C0F9A10001BFABA /* wallSlide.mp3 in Resources */,
 				0E7DFA912C0E789C001BFABA /* Assets.xcassets in Resources */,
+				0E7DFAFD2C0F9A10001BFABA /* monsterHit.mp3 in Resources */,
+				0E7DFAFB2C0F9A10001BFABA /* playerDeath.mp3 in Resources */,
+				0E7DFB042C0F9A10001BFABA /* fan.mp3 in Resources */,
+				0E7DFB092C0F9A10001BFABA /* shotgunPickup.mp3 in Resources */,
+				0E7DFB012C0F9A10001BFABA /* switchFlip.mp3 in Resources */,
+				0E7DFB062C0F9A10001BFABA /* wallThud.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,8 +393,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E7DFA8F2C0E7898001BFABA /* ContentView.swift in Sources */,
+				0E7DFAC52C0F9355001BFABA /* SoundManager.swift in Sources */,
 				0E7DFAB12C0F6E50001BFABA /* NSImage+Bitmap.swift in Sources */,
 				0E7DFA8D2C0E7898001BFABA /* The_Desmond_DilemmaApp.swift in Sources */,
+				0E7DFAC92C0F940C001BFABA /* ViewModel.swift in Sources */,
+				0E7DFAC72C0F93DD001BFABA /* KeyEventHandling.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,10 +408,28 @@
 				0E7DFABB2C0F7FA1001BFABA /* Rect.swift in Sources */,
 				0E7DFAB92C0F75D2001BFABA /* World.swift in Sources */,
 				0E7DFAAF2C0F6DEC001BFABA /* Bitmap.swift in Sources */,
+				0E7DFABD2C0F8958001BFABA /* Tile.swift in Sources */,
+				0E7DFAD52C0F95A9001BFABA /* Effect.swift in Sources */,
+				0E7DFACB2C0F94AD001BFABA /* Actor.swift in Sources */,
+				0E7DFAD92C0F95F5001BFABA /* Input.swift in Sources */,
+				0E7DFAD32C0F9588001BFABA /* Easing.swift in Sources */,
 				0E7DFAB32C0F703A001BFABA /* Renderer.swift in Sources */,
+				0E7DFAE52C0F9710001BFABA /* Switch.swift in Sources */,
 				0E7DFAB52C0F73D9001BFABA /* Vector.swift in Sources */,
+				0E7DFAE72C0F98FD001BFABA /* Textures.swift in Sources */,
+				0E7DFAE32C0F96F0001BFABA /* Sounds.swift in Sources */,
 				0E7DFAB72C0F73FC001BFABA /* Player.swift in Sources */,
+				0E7DFABF2C0F8969001BFABA /* Tilemap.swift in Sources */,
+				0E7DFAD12C0F9562001BFABA /* Door.swift in Sources */,
+				0E7DFADD2C0F9661001BFABA /* Pushwall.swift in Sources */,
+				0E7DFAC32C0F906B001BFABA /* Thing.swift in Sources */,
+				0E7DFAE12C0F96CD001BFABA /* Rotation.swift in Sources */,
+				0E7DFADB2C0F9625001BFABA /* Monster.swift in Sources */,
+				0E7DFACD2C0F94CC001BFABA /* Animation.swift in Sources */,
+				0E7DFADF2C0F967E001BFABA /* Ray.swift in Sources */,
+				0E7DFACF2C0F94E6001BFABA /* Billboard.swift in Sources */,
 				0E7DFAAD2C0F6DB4001BFABA /* Color.swift in Sources */,
+				0E7DFAD72C0F95CD001BFABA /* Fan.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

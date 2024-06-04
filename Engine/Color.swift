@@ -17,6 +17,10 @@ public struct Color {
 }
 
 public extension Color {
+    var isOpaque: Bool {
+        return a == 255
+    }
+    
     static let clear = Color(r: 0, g: 0, b: 0, a: 0)
     static let black = Color(r: 0, g: 0, b: 0)
     static let white = Color(r: 255, g: 255, b: 255)
@@ -24,4 +28,13 @@ public extension Color {
     static let red = Color(r: 255, g: 0, b: 0)
     static let green = Color(r: 0, g: 255, b: 0)
     static let blue = Color(r: 0, g: 0, b: 255)
+    
+    func darken(distance: Double, strength: Double) -> Color {
+        var color = self
+        let invDistance = 1 / (1 + distance * strength)
+        color.r = UInt8(Double(r) * invDistance)
+        color.g = UInt8(Double(g) * invDistance)
+        color.b = UInt8(Double(b) * invDistance)
+        return color
+    }
 }
